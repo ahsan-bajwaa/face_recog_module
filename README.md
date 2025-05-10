@@ -5,6 +5,22 @@ Also also change it ip address of your server.
 For Mobile connection install IP Webcam application from playstore.
 
 Run this script in virtual envirnment!
+You’ll need CMake, Boost, and some development headers:
+```
+sudo apt update
+sudo apt install -y build-essential cmake \
+    libopenblas-dev liblapack-dev libx11-dev \
+    libgtk-3-dev libboost-python-dev \
+    python3-dev
+sudo apt install python3.13-dev
+pip install --upgrade pip setuptools wheel
+```
+This may take a while.
+```
+pip install dlib
+```
+Then,
+
 ```
 pip install opencv-python
 pip install face_recognition
@@ -16,14 +32,4 @@ pip install requests
 pip install python-dotenv
 pip install hashlib
 pip install urllib3
-```
-```
-pip install dlib
-```
-
-If you got error due to dlib use this command.
-```
-sudo apt update
-sudo apt install build-essential cmake libgtk-3-dev libboost-all-dev libv4l-dev libxvidcore-dev libx264-dev libjpeg-dev libtiff-dev libatlas-base-dev libopenblas-dev liblapack-dev libblas-dev xorg-dev
-pip install dlib
 ```
